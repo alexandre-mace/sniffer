@@ -1,0 +1,36 @@
+{
+  "name": "alexandre-mace/sniffer",
+  "type": "symfony-bundle",
+  "description": "Provides DTO classes extraction and validation",
+  "keywords": ["extraction", "request", "api", "extraction", "validation", "symfony"],
+  "homepage": "https://github.com/alexandre-mace/sniffer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexandre MACÉ",
+      "email": "contact.alexandremace@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "symfony/http-foundation": "4.4.*",
+    "symfony/http-kernel": "4.4.*",
+    "symfony/validator": "4.4.*",
+    "symfony/serializer": "4.4.*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.4.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Amace\\SnifferBundle\\": ""
+    },
+    "exclude-from-classmap": [
+      "/Tests/"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+    }
+  }
+}
